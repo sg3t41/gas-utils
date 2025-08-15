@@ -1,0 +1,6 @@
+.gitsecret/keys/random_seed
+!*.secret
+.gitsecret/keys/private-keys-v1.d/
+.gitsecret/keys/pubring.kbx~
+.clasp.json
+node_modules
