@@ -1,4 +1,4 @@
 // test
-const helloWorld = () => {
+function helloWorld(): void {
 	Logger.log("Hello, World!")
 }

@@ -1,5 +1,5 @@
 {
-  "name": "gas-utils",
+  "name": "gas-utils-spreadsheets-base",
   "version": "0.0.1",
   "description": "",
   "homepage": "https://github.com/sg3t41/gas-utils#readme",
@@ -16,11 +16,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"build": "tsc && npm run copy-manifest",
-  	"copy-manifest": "cp ./appsscript.json dist/appsscript.json"
+    "build": "tsc",
+    "copy-manifest": "cp appsscript.json dist/appsscript.json",
+    "deploy": "npm run build && npm run copy-manifest && clasp push"
   },
   "devDependencies": {
-    "@google/clasp": "^2.4.2",
     "@types/google-apps-script": "^1.0.83",
     "typescript": "^5.9.2"
   }
